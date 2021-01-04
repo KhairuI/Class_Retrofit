@@ -3,41 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="15sp"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".view.PutActivity">
 
     <Button
-        android:text="Get Post"
-        android:id="@+id/getPostButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </Button>
-    <Button
-        android:text="Get Comment"
-        android:id="@+id/getCommentButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </Button>
-
-    <Button
-        android:text="Post Web"
-        android:id="@+id/postButtonId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </Button>
-    <Button
-        android:text="Put and Patch"
+        android:layout_marginTop="5dp"
+        android:text="Put"
         android:id="@+id/putButtonId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </Button>
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="Patch"
+        android:id="@+id/patchButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="Delete Post"
+        android:id="@+id/deleteButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <TextView
+        android:layout_marginTop="15sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/putFinalResultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
 
 
 </LinearLayout>

@@ -11,7 +11,7 @@ import com.example.classretrofit.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button getPostButton,getComment,postButton;
+    private Button getPostButton,getComment,postButton,putButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(MainActivity.this, CreatePost.class);
+                startActivity(intent);
+            }
+        });
+
+        putButton= findViewById(R.id.putButtonId);
+        putButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this, PutActivity.class);
                 startActivity(intent);
             }
         });

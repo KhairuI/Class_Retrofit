@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassRetrofit">
-        <activity android:name=".view.CreatePost"></activity>
+        <activity android:name=".view.PutActivity"></activity>
+        <activity android:name=".view.CreatePost" />
         <activity android:name=".view.CommentActivity" />
         <activity android:name=".view.PostActivity" />
         <activity android:name=".view.MainActivity">
