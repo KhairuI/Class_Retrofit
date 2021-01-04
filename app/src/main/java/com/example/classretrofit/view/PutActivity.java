@@ -2,6 +2,7 @@ package com.example.classretrofit.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -78,9 +79,10 @@ public class PutActivity extends AppCompatActivity {
 
     private void patchPost() {
 
-        Post post= new Post(23,null,"My new Text Here");
-        Call<Post> call= apiClient.patchPost(4,post);
+        Post post= new Post(23,null,"My new  Patch Text Here");
+        Call<Post> call= apiClient.patchPost(5,post);
         call.enqueue(new Callback<Post>() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {
 
@@ -107,7 +109,7 @@ public class PutActivity extends AppCompatActivity {
     private void putPost() {
 
         Post post= new Post(23,null,"My new Text Here");
-        Call<Post> call= apiClient.putPost(4,post);
+        Call<Post> call= apiClient.putPost(5,post);
         call.enqueue(new Callback<Post>() {
             @Override
             public void onResponse(Call<Post> call, Response<Post> response) {
